@@ -6,13 +6,13 @@ There’s no two ways about it.  This is one of those **special gems** that some
 
 ### Gen 7 is the second-slowest generation on record!
 
-Neat! Average speed: `71.13725490196079`
+Neat! Average speed (without legendaries): `60.916666666666664`
 
 ### How to run:
 
 `node app.js STATNAME FILTER_LEGENDARIES`
 It’ll spit back an object with the average stats across all generations.
-The acceptable stats are `attack`, `defense`, `spAttack`, `spDefense`, `speed`, `hp`, and `total`. Filter legendaries simply looks for anything to be written, if you don’t write any single word there, it won’t filter them.
+The acceptable stats are `attack`, `defense`, `spAttack`, `spDefense`, `speed`, `hp`, `total`, and `average`. Filter legendaries simply looks for anything to be written, if you don’t write any single word there, it won’t filter them.
 
 ### Leave your comments at the door.
 
