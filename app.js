@@ -2,7 +2,6 @@ const fs = require('fs');
 
 const WANTEDSTAT = process.argv[2];
 const FILTER = (process.argv.length === 4) ? process.argv[3] : null;
-console.log('fil', FILTER)
 const GENS = [151, 251, 386, 493, 649, 721, 802];
 const STATS = {
   hp: 1,
@@ -37,7 +36,7 @@ const statByGen = (stat) => {
     if (megaForm) pokeGen = 6;
 
     const oneStat = Number(poke.split('  ')[STATS[stat]]);
-    if (isNaN(oneStat)) console.log(poke.split('  ')[0])
+    if (isNaN(oneStat)) console.log('wow, error', poke.split('  ')[0])
     if (!genArrStore[pokeGen]) return genArrStore[pokeGen] = [oneStat];
     return genArrStore[pokeGen].push(oneStat);
   });
